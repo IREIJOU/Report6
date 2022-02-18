@@ -28,4 +28,8 @@ public class TodoList {
     public void deleteTodo(int i){
         list.remove(i);
     }
+
+    public int listSize(){
+        return list.size();
+    }
 }
