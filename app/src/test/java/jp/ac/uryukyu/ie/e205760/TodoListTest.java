@@ -6,7 +6,15 @@ package jp.ac.uryukyu.ie.e205760;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Todoリストのテストを行うクラス。
+ */
 class TodoListTest {
+    /**
+     * TodoリストのTodo削除機能のテスト。
+     * TodoListに2つのTodoを追加した後、先頭のTodoを削除。
+     * Todoの削除の前後でTodoListの要素数に変化が起きているかを検証する。
+     */
     @Test
     void deleteTodoTest() {
         TodoList list = new TodoList();
