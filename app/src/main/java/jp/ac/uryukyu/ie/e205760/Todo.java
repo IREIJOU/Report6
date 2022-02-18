@@ -17,14 +17,14 @@ public class Todo {
 
     public void printInfo(){
         System.out.print(this.title);
-        System.out.print(" ");
+        System.out.print(" 期限:");
         System.out.print(this.year);
         System.out.print("年");
         System.out.print(this.month);
         System.out.print("月");
         System.out.print(this.day);
         System.out.println("日");
-        System.out.print("詳細：");
+        System.out.print("詳細:");
         System.out.println(this.detail);
         System.out.println("");
 
