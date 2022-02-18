@@ -17,7 +17,7 @@ public class Todo {
 
     public void printInfo(){
         System.out.print(this.title);
-        System.out.print(" 期限:");
+        System.out.print("  期限:");
         System.out.print(this.year);
         System.out.print("年");
         System.out.print(this.month);

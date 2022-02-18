@@ -19,4 +19,13 @@ public class TodoList {
             td.printInfo();
         }
     }
+
+    public String checkTitle(int x){
+        Todo xtodo = list.get(x);
+        return xtodo.getTitle();
+    }
+
+    public void deleteTodo(int i){
+        list.remove(i);
+    }
 }

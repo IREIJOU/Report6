@@ -11,6 +11,7 @@ public class Main {
             System.out.println("何をしますか？番号を入力してください");
             System.out.println("1:タスクの追加");
             System.out.println("2:タスクの確認");
+            System.out.println("3:タスクの削除");
             System.out.println("0:終了");
             action = scan.nextInt();
             String nom = scan.nextLine();
@@ -33,6 +34,13 @@ public class Main {
             else if (action == 2){
                 System.out.println("タスクの確認を行います");
                 list.printTodoList();
+            }
+            else if (action == 3){
+                System.out.println("タスクの削除を行います");
+                System.out.println("何番目のタスクを削除するか選んでください。先頭は1番です。");
+                int i = scan.nextInt();
+                System.out.println(i + "番目のタスク " + list.checkTitle(i - 1) +" を削除しました");
+                list.deleteTodo(i - 1);
             }
             else if (action == 0){
                 System.out.println("終了します");
